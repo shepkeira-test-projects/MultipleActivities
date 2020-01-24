@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="female">Identify As Female (She/Her)</string>
+    <string name="male">Identify As Male (He/Him)</string>
+    <string name="other">Other (They/Them)</string>
+    <string name="prefer">Prefer Not To Disclose (They/Them)</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="student_number">Student Number</string>
+    <string name="gender_identity">Gender Identity</string>
+    <string name="major">Major</string>
+    <string name="i_am_not_a_robot">I Am Not A Robot</string>
+    <string name="submit">Submit</string>
+    <string name="todo">TODO</string>
+    <string name="summary">Summary</string>
+    <string name="textview1">TextView1</string>
+    <string name="textview2">TextView2</string>
+    <string name="textview3">TextView3</string>
+    <string name="textview4">TextView4</string>
+    <string name="close">Close</string>
+    <string-array name="spinner_classes">
+        <item>COSC</item>
+        <item>DATA</item>
+        <item>MATH</item>
+    </string-array>
+</resources>

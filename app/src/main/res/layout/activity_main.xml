@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/narrow_logo"
+            android:contentDescription="@string/todo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="162dp">
+
+            <TextView
+                android:id="@+id/text_first"
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/first_name"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/text_last"
+                app:layout_constraintEnd_toStartOf="@+id/first_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="218dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/text_first"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_first"
+                app:layout_constraintTop_toTopOf="@+id/text_first"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="162dp">
+
+            <TextView
+                android:id="@+id/text_last"
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/last_name"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/text_stuNum"
+                app:layout_constraintEnd_toStartOf="@+id/last_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_first" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="218dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/text_last"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_last"
+                app:layout_constraintTop_toTopOf="@+id/text_last"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="162dp">
+
+            <TextView
+                android:id="@+id/text_stuNum"
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/student_number"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/text_gen"
+                app:layout_constraintEnd_toStartOf="@+id/student_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_last" />
+
+            <EditText
+                android:id="@+id/student_number"
+                android:layout_width="218dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/gender_radio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_stuNum"
+                app:layout_constraintTop_toBottomOf="@+id/last_name"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="162dp">
+
+            <TextView
+                android:id="@+id/text_gen"
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/gender_identity"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/textMajor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_stuNum" />
+
+            <RadioGroup
+                android:id="@+id/gender_radio"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="@string/radiobutton"
+                app:layout_constraintBottom_toTopOf="@+id/major_spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_stuNum">
+
+                <RadioButton
+                    android:id="@+id/radio_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/female" />
+
+                <RadioButton
+                    android:id="@+id/radio_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/radio_o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other" />
+
+                <RadioButton
+                    android:id="@+id/radio_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prefer" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="162dp">
+
+            <TextView
+                android:id="@+id/textMajor"
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/major"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/checkBox"
+                app:layout_constraintEnd_toStartOf="@+id/major_spinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_gen" />
+
+            <Spinner
+                android:id="@+id/major_spinner"
+                android:layout_width="218dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textMajor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textMajor"
+                app:layout_constraintTop_toTopOf="@+id/textMajor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="162dp">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/i_am_not_a_robot"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textMajor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="162dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:onClick="next_activity"
+                android:text="@string/submit"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
